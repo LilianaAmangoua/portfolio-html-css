@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description de la page">
+        <title>CV de Liliana Amangoua</title>
+        <!-- Fichier CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Icônes -->
+        <script src="https://kit.fontawesome.com/2a9a138293.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Menu -->
+        <header>
+            <nav id="nav">
+                <ul class="liste-liens-menu">
+                    <li class="responsive-à-cacher"><a href="#présentation">Présentation</a></li>
+                    <li class="responsive-à-cacher"><a href="#savoirs" >Mes compétences</a></li>
+                    <li class="responsive-à-cacher"><a href="#parcours" class="responsive-à-cacher">Mon parcours</a></li>
+                    <li class="responsive-à-cacher"><a href="#titre-langues" class="responsive-à-cacher">Langues</a></li>
+                    <li class="responsive-à-cacher"><a href="#contact" class="responsive-à-cacher">Me contacter</a></li>
+                </ul>
+                
+            </nav>
+            <div class="container-icône">
+                <i id="icône-menu" class="fa-solid fa-bars fa-xl" onclick="menu()"></i>
+            </div>
+            
+        </header>
+            
+        <!-- Section Hero -->
+        <main>
+            <hr>
+            <div id="présentation">
+                <h1>Liliana AMANGOUA</h1>
+                <h2 class="titre-hero">Développeuse web</h2>
+
+                <section>
+                    <ul>
+                        <li>21 ans</li>
+                        <li>Orléans / Tours</li>
+                        <li>Stage : Du 31/03/2025 au 06/06/2025</li>
+                        <li>Tél: 06 06 06 06 06</li>
+                        <li>Mail: amangoua99@gmail.com</li>
+                    </ul>
+                </section>
+                <br>
+
+                <article>
+                    <p>
+                        Originaire du commerce international, je souhaite me tourner vers le développement web. <br>
+                        Je suis à la recherche d'un stage pour mettre en pratique mes compétences.
+                    </p>
+                   
+                    <a href="#contact">
+                        <button class="bouton-contact">Contactez-moi</button>
+                    </a>
+                
+                </article>
+            </div>
+
+            <img src="https://i.postimg.cc/9fFf3k1b/IMG-20230807-WA0007.jpg" alt="Image de Liliana" class="image-liliana">
+        </main>
+        
+
+        <!-- Sections compétences -->
+       
+        <h2 id="savoirs">Compétences</h2>
+        <section class="compétences">
+            <ul>
+                <div>
+                    <li>HTML</li>
+                    <progress value="4" max="10"> </progress>
+                </div>
+                
+                <div>
+                    <li>CSS</li>
+                    <progress value="4" max="10"></progress>
+                </div>
+                
+                <div>
+                    <li>JavaScript</li>
+                    <progress value="2" max="10"></progress>
+                </div>
+                
+                <div>
+                    <li>C</li>
+                    <progress value="2" max="10"></progress>
+                </div>
+                
+                <div>
+                    <li>Git</li>
+                    <progress value="1" max="10"></progress>
+                </div>
+                
+            </ul>
+
+            <img src="https://i.postimg.cc/pd3K3g4F/Images-Racines-Boucles-1-removebg-preview.png" alt="langages C, JS, HTML et CSS et Git">
+        </section>
+        
+        <!-- Section Formation et Expériences -->
+        <div class="formation-exp" id="parcours">
+            <div>
+                <h2>Formation</h2>
+                <ul>
+                    <li>Titre professionnel Développeur Web et Web Mobile</li>
+                    <dt>GRETA Centre Val-de-Loire - 2024-2025 </dt>
+                    <br>
+                    <li>BTS NDRC</li>
+                    <dt>CCI CHARTRES - 2021-2023</dt>
+                    <br>
+                    <li>Baccalauréat Général</li>
+                    <dt>Lycée Charles Peguy - 2021</dt>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Expérience</h2>
+                <h3>Assistante commerciale</h3>
+                <p>Herb'Expert - 2021-2023</p>
+                <br>
+                <ul>
+                    <li>Gérer un portefeuille de 16 clients basé en Europe représentant 9 % du chiffre d’affaires</li>
+                    <br>
+                    <li>Résoudre des réclamations et des litiges concernant la qualité des produits et des livraisons</li>
+                    <br>
+                    <li>Organiser 2 salons internationaux par an</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Section langues parlées -->
+        <h2 id="titre-langues">Langues parlées</h2>
+        <section class="langues">
+            <img src="https://i.postimg.cc/zBhYNqgn/Images-Racines-Boucles-removebg-preview.png" alt="Image illustrant le drapeaux italien, allemand et américain">
+            <table>
+                <tr>
+                    <th>Langues</th>
+                    <th>Niveau</th>
+                </tr>
+
+                <tr>
+                    <td>Anglais</td>
+                    <td>Niveau B2</td>
+                </tr>
+
+                <tr>
+                    <td>Italien</td>
+                    <td>Bilingue</td>
+                </tr>
+
+                <tr>
+                    <td>Allemand</td>
+                    <td>Niveau A2</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Formulaire  -->
+        <form id="contact">
+            <fieldset>
+                <legend>Me contacter</legend>
+            
+                <div>
+                    <label for="nom-de-famille">Nom de famille :</label>
+                    <input type="text">
+                    <label for="prénom">Prénom :</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label for="mail">Votre adresse mail:</label>
+                    <input type="email" name="mail">
+                </div>
+
+                
+                <div>
+                    <label for="entreprise-particulier">Entreprise ou particulier</label>
+                    <select name="entreprise-particulier">
+                    <option value="entreprise">Entreprise</option>
+                    <option value="particulier">Particulier</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Taille de l'entreprise dans laquelle vous exercez : </p>
+                    <input type="radio" name="entreprise" id="autoentrepreneur">
+                    <label for="entreprise">0-1 personne</label>
+                    <input type="radio" name="entreprise" id="micro-entreprise">
+                    <label for="entreprise">2-10 personnes</label>
+                    <input type="radio" name="entreprise" id="grande-entreprise">
+                    <label for="entreprise">10+ personnes</label>
+                </div>
+
+                <div>
+
+                    <label for="moyen">Par quel moyen m'avez-vous trouvé ?</label><br>
+                    <input type="checkbox" id="LinkedIn" name="LinkedIn">
+                    <label for="LinkedIn">LinkedIn</label><br>
+                    <input type="checkbox" id="annonces-en-ligne" name="annonces-en-ligne">
+                    <label for="annonces-en-ligne"> Site d'offres d'emploi en ligne</label><br>
+                    <input type="checkbox" id="réponse-candidature" name="réponse-candidature">
+                    <label for="réponse-candidature"> Réponse à une candidature</label><br>
+                </div>
+
+                <div>
+                    <label for="message">Votre message : </label>
+                    <textarea name="message"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer">
+
+            </fieldset>
+        </form>
+        
+
+        <footer>
+
+            <section>
+                <h2>Liliana AMANGOUA</h2>
+                <p>06 06 06 06 06</p>
+                <p>amangoua99@gmail.com</p>
+            </section>
+            
+            <section class="liens-rs">
+                <a href="https://github.com/">Github</a>
+                <a href="https://fr.linkedin.com/">LinkedIn</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+            </section>
+
+        </footer>
+
+        <script>
+
+            function menu(){
+                let nav = document.getElementById("nav");
+
+                if(nav.style.display == "none"){ 
+                    nav.style.display = "block";
+                }
+
+                else{
+                    nav.style.display = "none";
+                }
+            }
+
+        </script>
+    </body>
+
+</html>

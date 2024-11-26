@@ -1,0 +1,437 @@
+* {
+    margin: 0px;
+    background-color: #f8f8f8;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Menu*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #4e4e4e;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+nav > ul > li {
+    padding: 20px 25px; 
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 25px; 
+    color: #070707;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+    font-weight: 600;
+    background-color: #fda285;
+}
+
+#icône-menu {
+    display: none;
+}
+
+.container-icône {
+    display: none;
+}
+
+
+/*Section Hero*/
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #4e4e4e;
+}
+
+main > div > h1{
+    font-size: 4rem;
+    text-shadow: 2px 2px #fda285;
+    margin-right: 50px;
+}
+
+.titre-hero {
+    animation-name: position;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    color: #fda285;
+}
+
+@keyframes position {
+    0% { 
+        transform: translateX(0%); 
+    }
+
+    50% { 
+        transform: translateX(25%);
+    }
+
+    75% {
+        text-shadow: 2px 2px #4e4e4e;
+        transform: translateX(-10%);
+    }
+
+    100% {
+        text-shadow: 2px 2px #4e4e4e;
+        transform: translateX(25%);
+    }
+}
+
+.bouton-contact {
+    border-radius: 5px;
+    border: 1px solid #4e4e4e;
+    box-shadow: 2px 2px 5px #fda285;
+    padding: 15px 50px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.bouton-contact:hover {
+    width: 400px;
+    background-color: #fda285;
+    box-shadow: 2px 2px 15px #4e4e4e;
+    border: 1px solid #fda285;
+}
+
+.bouton-contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.image-liliana {
+    width: 20%;
+}
+
+
+/*Section savoirs-faire*/
+
+#savoirs {
+    text-align: center;
+}
+
+.compétences {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.compétences > ul> div > li {
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.compétences > section > h3 {
+    text-align: center;
+
+}
+
+
+/*Formation et expériences*/
+.formation-exp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 290px;
+    color: #4e4e4e;
+}
+
+.formation-exp div {
+    width: 50%;
+}
+
+
+.formation-exp > div > h2 {
+    text-shadow: 2px 2px #fda285;
+}
+
+/*Langues*/
+
+.langues {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #4e4e4e;
+}
+
+#titre-langues {
+    margin-top: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #fda1856e;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 300px; 
+}
+
+
+/*Formulaire*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #4e4e4e;
+}
+
+fieldset {
+    width: 40%;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+legend {
+    text-shadow: 2px 2px #fda285;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+}
+
+fieldset div {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], textarea, select {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #4e4e4e;
+}
+
+input[type=email] {
+    width: 30%;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 1px solid #4e4e4e;
+    box-shadow: 2px 2px #fda285;
+    padding: 15px 50px;
+    font-size: 0.8rem;
+}
+
+input[type=submit]:hover {
+    background-color: #fda285;
+    box-shadow: 2px 2px #4e4e4e;
+    border: 1px solid #fda285;
+}
+
+textarea {
+    display: block;
+    margin-top: 10px;
+    width: 30%;
+    height: 80px;
+}
+
+
+
+/*Footer*/
+footer  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #4e4e4e;
+}
+
+.liens-rs {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section > a {
+    text-decoration: none;
+    color: #070707;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px; 
+}
+
+footer > section > a:hover {
+    font-weight: 600;
+    background-color: #fda285;
+}
+
+/*Responsive Smartphones*/
+
+@media only screen and (max-width : 768px) {
+
+    /*Menu*/
+    nav {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        opacity: 0.9;
+    };
+
+    
+    #icône-menu {
+        display: block;
+        position: absolute;
+        margin-left: 20px;
+        top: 25px;
+        cursor: pointer;
+        color: #4e4e4e;
+    }
+
+    .container-icône {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #4e4e4e;
+    }
+
+    .liste-liens-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        border-top: 1px solid #4e4e4e;
+    }
+
+    .responsive-à-cacher {
+        margin: 20px 0;
+    }
+
+    /*Section Hero*/
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    main > div > h1{
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    main > div > section > ul > li {
+        list-style-type: none;
+        margin-bottom: 5px;
+    }
+
+    main > div > section > ul {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .image-liliana {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    /*Section compétences*/
+    .compétences {
+        flex-direction: column-reverse;
+        margin-top: 0px ;
+        margin-bottom: 20px ;
+    }
+
+    .compétences ul {
+        padding-left: 0;
+    }
+
+    .compétences img{
+        width: 85%;
+        align-self: center;
+    }
+
+    /*Section Formation et expériences*/
+    .formation-exp {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: auto;
+    }
+
+    .formation-exp div {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+
+    /* Section Langues*/
+
+    table {
+        margin-bottom: 8%;
+    }
+
+    .langues {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .langues img {
+        margin-bottom: 8%;
+        width: 70%;
+        align-self: center;
+    }
+
+
+    /*Formulaire*/
+    form {
+        margin-bottom: 12%;
+    }
+
+    fieldset {
+        width: 80%;
+    }
+
+    input[type=text], input[type=email], textarea, select {
+        display: block;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+
+    /*Footer*/
+    footer {
+        width: 100%;
+    }
+}
+
